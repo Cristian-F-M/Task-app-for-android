@@ -6,7 +6,7 @@ export function Screen({ children, safeArea = true }) {
 
   return (
     <View
-      className="flex-1 bg-gray-900"
+      className="flex-1 bg-gray-900 w-full"
       style={
         safeArea ? { paddingTop: insets.top, paddingBottom: insets.bottom } : {}
       }
