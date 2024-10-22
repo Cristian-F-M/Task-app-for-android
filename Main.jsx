@@ -14,7 +14,7 @@ import { useEffect, useRef, useState } from 'react'
 import Modal from 'react-native-modalbox'
 import { randomUUID } from 'expo-crypto'
 import { useTasks } from './context/Task'
-
+import { LinearGradient } from 'expo-linear-gradient'
 
 export function Main() {
   const { tasks, setTasks, createTask, getTasks, deleteTask, updateTask } =
@@ -93,6 +93,7 @@ export function Main() {
               ref={inputTask}
               autoFocus={true}
               keyboardType="default"
+              onSubmitEditing={handleClicAddTaks}
               onChangeText={t => {
                 setError(null)
                 setTaskText(t)
@@ -108,6 +109,12 @@ export function Main() {
           </Pressable>
         </View>
       </Modal>
+
+      <LinearGradient colors={['#111827', '#1d2b4aee']}>
+        <Text className="text-white text-sm text-center my-2">
+          © <Text className="underline">Cristian Morales</Text> 22/10/2024
+        </Text>
+      </LinearGradient>
     </Screen>
   )
 }
