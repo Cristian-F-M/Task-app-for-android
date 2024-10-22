@@ -1,27 +1,34 @@
 {
   "expo": {
-    "name": "TODO",
-    "slug": "TODO",
+    "name": "Task List",
+    "slug": "Task List",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo_cm_minimalista.webp",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo_cm_minimalista.webp",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#111827"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.morales.task"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/logo_cm_minimalista.webp",
+        "backgroundColor": "#111827"
+      },
+      "package": "com.morales.task"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo_cm_minimalista.webp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5a7c55d0-7332-40fe-90cd-9684a705224b"
+      }
     }
   }
 }
